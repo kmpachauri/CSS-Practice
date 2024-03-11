@@ -1,0 +1,54 @@
+.container{
+    height: 700px;
+    border: 2px solid black;
+    background-color:antiquewhite;
+    display: grid;
+    
+    grid-gap: 10px;
+    /* grid-template-rows: 80px 60px 1fr 100px 80px;
+    grid-template-columns:200px 1fr 180px;
+    
+    grid-template-areas: 
+     "hdr hdr hdr"
+     "sdb hd rt"
+     "sdb main rt"
+     "sdb cnt rt"
+     "ftr ftr ftr"
+    ; */
+
+    grid-template: "hdr hdr hdr" 70px
+                   "sdb hd hd" 55px
+                   "sdb main rt" 
+                   "sdb cnt cnt" 85px
+                   "ftr ftr ftr" 70px/200px 1fr 180px;
+
+}
+.box{
+    border: 1px solid red;
+    text-align: center;
+    font-size:24px;
+    font-weight: 900;
+    background-color:darkcyan;
+}
+
+#header{
+    grid-area: hdr;
+}
+#head{
+    grid-area: hd;
+}
+#main{
+    grid-area: main;
+}
+#side{
+    grid-area: sdb;
+}
+#right{
+    grid-area: rt;
+}
+#contact{
+    grid-area: cnt;
+}
+#footer{
+    grid-area: ftr;
+}

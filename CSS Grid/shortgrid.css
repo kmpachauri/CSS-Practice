@@ -1,0 +1,99 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+.container{
+    height: 700px;
+    border: 2px solid black;
+    background-color:antiquewhite;
+    display: grid;
+    /* grid-gap: 8px; */
+    grid-column-gap: 5px;
+    grid-row-gap: 10px;
+
+    /******grid-auto-row/column/flow********/
+    /* grid-auto-rows: 55px 1fr 25% 55px; 
+    grid-auto-columns: 170px 1fr 1fr 150px ;  */
+    /* grid-auto-flow: row;
+    grid-auto-flow:column;
+    grid-auto-flow: dense;  
+     */
+
+/**********grid-shorthand***********/
+ /* 1)  grid-template-areas or grid-template shorthand property */
+    grid: "header header header header" 60px
+          "table main main main"                      
+          "table left middle right"
+          "footer footer footer right" 60px/25% 20% 30% 23%;
+
+ /* 2)  grid-template-rows or grid-template-columns shorthand property */
+    /* grid: 60px 1fr 200px 60px/25% 200px 250px 1fr; */
+    /* grid: 60px 1fr 220px 60px/ auto 1fr auto; */
+    /* grid: auto 1fr 250px auto/60px 1fr 220px 60px; */
+ 
+ /* 2)  grid-template-rows or grid-template-columns [with auto flow] shorthand property */
+    /* grid: 60px 1fr 220px 60px/ [dense] 150px auto 1fr; */
+    /* grid: [dense] 150px auto 1fr/60px 1fr 220px 60px ; */
+
+    }
+.box{
+    border: 2px solid gray;
+    text-align: center;
+    font-size:28px;
+    font-weight: 900;
+    background-color: cadetblue;
+    /* width: 200px;
+    height: 200px; */
+}
+
+#box1{
+    background-color: rgb(53, 10, 183);
+    /* grid-column-start: 1;
+    grid-column-end: 5; */
+    /* grid-column: 1/5; */
+    grid-column: 1/span 4;
+
+    /* grid-area:header; */
+}
+  #box2{
+      background-color: blueviolet;
+      grid-row: 2/span 3;
+
+      /* grid-area: table; */
+  }
+  #box3{
+      background-color: chocolate;
+      /* grid-column-start: 2;
+      grid-column-end: 4;
+      grid-row-start: 2;
+      grid-row-end: 3 */
+      grid-area:2/2/3/span 2; 
+
+      /* grid-area:main;   */
+  }
+  #box4{
+      background-color: aqua;
+      /* grid-column-start: 4; */
+      grid-row: 2/4;
+
+      /* grid-area:right; */
+  }
+  #box5{
+      background-color: yellowgreen;
+      grid-area:3/3/4/4;
+
+      /* grid-area:middle; */
+  }
+  #box6{
+      background-color: aqua;
+      grid-area: 3/2/4/3;
+
+      /* grid-area:left; */
+  }
+  #box7{
+    background-color: rgb(183, 10, 154);
+    grid-column: 2/5;
+
+    /* grid-area:footer; */
+} 
