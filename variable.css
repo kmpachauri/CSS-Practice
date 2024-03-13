@@ -14,7 +14,7 @@
     height: 500px;
     display: grid;
     gap: 10px;
-    /* font-size: var(--font-size); */
+    
 }
 .box{
     width: 100px;
@@ -23,6 +23,6 @@
     background-color: var(--pink);
     /****local variable****/
     --pink : #fab;
-    /* font-size: var(--font-size); */
+    font-size: var(--font-size);
 
 }
