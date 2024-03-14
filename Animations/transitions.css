@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    border: 1px solid red;
+    background-color: burlywood;
+    width: 600px;
+    height: 700px;
+}
+.box{
+    width: 150px;
+    height: 150px;
+    background-color: hotpink;
+    border: 1px solid black;
+    margin: 50px;
+
+    /* transition-property:all;
+    transition-delay: 1s;
+    transition-duration: 10s;
+    transition-timing-function: ease-out; */
+
+    /******Shorthand Property*****/
+    transition:padding 5s 0.5s linear, font-size 5s 0.5s linear, background-color 5s 0.5s linear,width 3s 0.5s linear, transform 7s 0.2s ease-in-out;
+
+    /****Using Variable*****/
+    /* --transition1:padding 5s 0.5s linear; --transition2: font-size 5s 0.5s linear;--transition3: background-color 5s 0.5s linear;
+    --transition4: width 4s 0.2s ease-out ;
+    --transition5: height 4s 0.2s ease-out;
+    --transition6:transform 4s 0.2s ease-in-out; */
+}
+#box1:hover{
+    
+    /* transition: var(--transition1),var(--transition2),var(--transition3),var(--transition4); */
+    width: 450px;
+    padding: 20px;
+    font-size: 50px;
+    background-color:blueviolet;
+}
+#box2:hover{
+    transition: var(--transition6),var(--transition5),var(--transition4);
+    transform:  rotate(180deg);
+    width: 350px;
+    height: 350px;
+}
+
+#box3:hover{
+    /* transition: var(--transition6); */
+    /* transition: 10s cubic-bezier(0.74, 2.35, 0.26,-2.79); */
+    transform: scale(2.5) translate(400px) rotate(270deg);
+}

@@ -1,0 +1,54 @@
+.box{
+    border: 2px solid green;
+    background-color: burlywood;
+    width: 200px;
+    height: 200px;
+    margin: 50px;
+    position: relative;
+}
+.box1:hover{
+    /* animation-name:box1;
+    animation-duration:5s;
+    animation-delay: 1s;
+    animation-timing-function:cubic-bezier(2, 1, 1, 1);
+    animation-direction:alternate;
+    animation-iteration-count: 5;
+    animation-fill-mode: forwards; */
+
+    /***shorthand****/
+    /* animation: box1 5s alternate 1s linear 5 forwards; */
+    animation: box1  5s linear 1s 5 alternate forwards;
+}
+@keyframes box1 {
+    from{width:200px; height:200px}
+    to{width:600px; height:400px}
+}
+.box3{
+    animation: box3 3s linear 2s 4 alternate both;
+}
+@keyframes box3{
+    from{
+        background-color: yellow; top:0;left:0
+    }
+    to{
+        background-color: green; top:-500px;left:0px;
+    }
+}
+.box2{
+    animation: box2 3s 2s ease-in-out 5 alternate backwards;
+}
+@keyframes box2{
+    0%{
+        background-color: yellowgreen;top:0;left:0;
+    }
+    50%{
+        background-color: blue;top:0;left:350px;
+    }
+    100%{
+        background-color: red;top:250px;left:350px;
+    }
+    /* 0%{
+        background-color: yellowgreen;top:0;left:0;
+    } */
+
+}
