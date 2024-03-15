@@ -13,7 +13,8 @@
     animation-timing-function:cubic-bezier(2, 1, 1, 1);
     animation-direction:alternate;
     animation-iteration-count: 5;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards; 
+    animation-play-state: running;*/
 
     /***shorthand****/
     /* animation: box1 5s alternate 1s linear 5 forwards; */
@@ -47,8 +48,5 @@
     100%{
         background-color: red;top:250px;left:350px;
     }
-    /* 0%{
-        background-color: yellowgreen;top:0;left:0;
-    } */
 
 }
