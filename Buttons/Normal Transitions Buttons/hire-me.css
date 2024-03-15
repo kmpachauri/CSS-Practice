@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+#btn{
+    background-color: rgb(251, 10, 86);
+    color: white;
+    padding: 1rem 3rem;
+    font-size: 20px;
+    box-shadow: 5px 5px 10px 0 gray;
+    cursor: pointer;
+    border: none;
+    position: relative;
+    z-index: 1;
+}
+#btn::after{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    opacity: 1;
+    transform: scaleX(0);
+    transform-origin:left ;
+    transition: 0.3s;
+}
+#btn:hover::after{
+    transform: scaleX(1);
+    transition: 0.8s;
+}
