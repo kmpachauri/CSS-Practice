@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <link rel="stylesheet" href="">
+    <style>
+         div.box{
+            background-color: goldenrod;
+            font-size: xx-large;
+            box-sizing: border-box;
+            /******box model - content,padding, border,margin
+               Actual Width - Width+pading+border
+               --> Margin & outline are not included in Actual width**/
+            width: 600px;
+            height: 600px;
+            /* padding: 35%; */
+            padding: 15rem;
+            border: 5px solid ;
+            margin: 3em auto;
+        }
+        .box{
+            /***********Outline*******/
+            /* outline-width: 20px;
+            outline-style: inset;
+            outline-style: outset;
+            outline-style: ridge;
+            outline-style: groove;
+            outline-color: gold; */
+
+            outline: 2rem groove darkgrey;
+            outline-offset: 15px;
+        }
+    </style>
+</head>
+<body style="background-color: aquamarine;">
+    
+    <h1 style="text-align: center; background-color: darkcyan;">Box Model</h1>
+
+    <div class="box">
+        BOX MODEL
+    </div>
+</body>
+</html>
