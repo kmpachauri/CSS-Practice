@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text</title>
+    <style>
+        .color{
+            color: blueviolet;
+        }
+        .alignment{
+            h3{
+                text-align: start;
+                text-align: end;
+                text-align: left;
+                text-align: right;
+                text-align: justify;
+                text-align: center;
+            }
+            p{
+                text-align-last: start;
+                text-align-last: left;
+                text-align-last: end;
+                text-align-last:justify;
+                text-align-last: center;
+                text-align-last: right;
+            }
+            h4 i{
+                vertical-align:auto;
+                vertical-align: text-top;
+                vertical-align: text-bottom;
+                vertical-align: top;
+                vertical-align: bottom;
+                vertical-align:middle;
+                vertical-align:sub;
+                vertical-align: super;
+            }
+            h5{
+                direction: ltr;
+                direction: rtl;
+            }
+            h6{
+                direction: rtl;
+                /* unicode-bidi: embed; */
+                /* unicode-bidi: isolate; */
+                /* unicode-bidi: isolate-override; */
+                /* unicode-bidi: normal; */
+                /* unicode-bidi: plaintext; */
+                unicode-bidi: bidi-override;
+            }
+        }
+
+        .underline{
+            text-decoration-line: underline;
+            text-decoration-color:rebeccapurple;
+            text-decoration-style:solid;
+            text-decoration-thickness: 5px;
+
+            text-decoration: underline rebeccapurple double 4px;
+        }
+        .overline{
+            text-decoration:overline goldenrod wavy 2px;
+        }
+        .line-through{
+            text-decoration: line-through red dashed 2px;
+            text-decoration: line-through;
+        }
+
+        .transformation{
+            h3{
+                text-transform: uppercase;
+            }
+            h4{
+                text-transform: lowercase;
+            }
+            h5{
+                text-transform: capitalize;
+            }
+        }
+
+        .spacing{
+            /* text-align: justify; */
+            h3{
+                letter-spacing:7px;
+            }
+            h4{
+                word-spacing: 30px;
+            }
+            #indent{
+                text-indent: 50%;
+            }
+            #line-height{
+                line-height: 30px;
+            }
+            .whitespace{
+                text-wrap:balance;
+                text-wrap:wrap;
+                text-wrap: nowrap;
+            }
+        }
+        .shadow{
+            text-shadow: 15px 5px 2px gray;
+        }
+    </style>
+</head>
+<body style="background-color: bisque;">
+
+    <h1>CSS Text</h1>
+
+    <h2> Text color</h2>
+    <div class="color">
+         Hii This is inside color div.
+    </div>
+
+    <h2>Text Alignment</h2>
+    <div class="alignment">
+        <h3>Text Align</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi assumenda eligendi nam a, dolorem quis officia totam nemo alias blanditiis asperiores autem quo tenetur neque vero laudantium repellendus voluptate aperiam!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum ducimus sed ea laborum fugit ex. Text-align-last</p>
+        <h4>This is inside alignment! <i>Verticle Align</i> we are learning verticle alignment.</h4>
+        <h5>Direction</h5>
+        <h6>Unicode -> use with direction property!</h6>
+    </div>
+
+    <h2>Text Decoration</h2>
+    <div class="underline">
+        This is underline
+    </div><br><br>
+    <div class="overline">
+        This is Overline
+    </div><br>
+    <div class="line-through">
+        This is line through.
+    </div>
+
+    <h2>Text Transformation</h2>
+    <div class="transformation">
+        <h3>Uppercase</h3>
+        <h4>LOWERCASE</h4>
+        <h5>this is capitalize text.</h5>
+    </div>
+
+    <div class="spacing">
+        <h2>Text Spacing</h2>
+        <h3>letter spacing</h3>
+        <h4>Word Spacing (inside spacing div)</h4>
+        <p id="indent">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad nulla odit ut tempore cumque hic totam nobis autem quisquam, recusandae qui distinctio dolor repudiandae animi corrupti optio illum excepturi, ratione tenetur alias quia obcaecati quaerat. Dignissimos, iste. Aliquid maxime iusto sint fugit, earum inventore! Repellat.</p>
+        <p id="line-height">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto aliquam iure a, velit suscipit nihil harum laborum nam laboriosam, et, accusantium labore sunt reiciendis eveniet facere ipsa? Fugiat magnam ea, veniam blanditiis, quam necessitatibus excepturi eos repellat officia ducimus sequi ipsam cupiditate omnis dolores consectetur inventore quos itaque placeat, asperiores in nemo. Temporibus soluta error harum cum perferendis, consequuntur omnis?</p>
+        <p class="whitespace">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam harum ducimus aliquam officiis quasi expedita cupiditate sed omnis minima hic voluptas optio ex fuga impedit asperiores, quia facere beatae autem? Corrupti facere similique, pariatur incidunt ipsum ducimus! Distinctio, maxime rerum illum facere enim labore magnam, sit alias adipisci ratione id dolore aspernatur voluptatibus esse fuga? Quaerat accusantium, soluta veritatis esse modi nam facilis ullam quia magni unde ut, officiis, repellendus ducimus. Autem asperiores neque tenetur voluptas porro, illo totam quae officiis natus provident voluptatum ullam non atque in alias eveniet consequuntur architecto excepturi culpa dolor beatae. Ipsam laudantium ullam vitae dolores ducimus accusantium modi, quisquam veritatis quidem in perspiciatis placeat nemo tempora distinctio consectetur illum. Ducimus maiores consequatur distinctio excepturi.</p>
+    </div>
+
+    <div class="shadow">
+        <h2>Text Shadow</h2>
+    </div>
+
+</body>
+</html>
