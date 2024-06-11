@@ -1,0 +1,47 @@
+*{
+    /* margin: 0;
+    padding: 0; */
+    box-sizing: border-box;
+}body{
+    font-size: larger;
+    /* background-color: #f1f2;
+    background-image: url('image2.jpeg');
+    background-repeat: repeat;
+    background-repeat: repeat-y; 
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+    background-attachment: scroll;
+    background-position: right top;
+    background-position: 0 -90%; */
+    background: #f1f2 url('image2.jpeg') repeat fixed 100%;
+    background-size: contain;
+    background-blend-mode:hue hard-light;
+}
+.color{
+    padding: 15px;
+    background-color: blueviolet;
+}
+.color h1{
+    background-color: darkcyan;
+}
+.color p{
+    background-color: hotpink;
+}
+.image{
+    border: 5px dashed rgba(255,0, 0,1);
+    width: 700px;
+    height: 1500px;
+    margin: 50px 150px;
+    padding: 150px;
+    text-align: center;
+    /* background-image: url('Building92microsoft.jpg'); */
+    background: url('Building92microsoft.jpg') repeat scroll;
+    background-size: contain;
+    /* background-origin: border-box; 
+    background-origin: padding-box; */
+    background-origin: content-box;
+    /* background-clip: content-box;
+    background-clip: border-box; */
+    background-clip: padding-box;
+}
